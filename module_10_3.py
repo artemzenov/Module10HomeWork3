@@ -15,7 +15,7 @@ class Bank:
 
         self.lock.acquire()
 
-        for i_elem in range(1, 100 + 1):
+        for i_elem in range(100):
 
             sum_deposit = randint(50, 500)
             self.balance += sum_deposit
@@ -31,7 +31,7 @@ class Bank:
 
     def take(self):
 
-        for i_elem in range(1, 100 + 1):
+        for i_elem in range(100):
 
             sum_take = randint(50, 500)
             print(f'Запрос на {sum_take}')
